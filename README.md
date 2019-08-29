@@ -1,7 +1,7 @@
 # High-Throughtput-TFM
 High Throughtput Traction Force Microscopy
 
-![Alt Text](img/TFMThumbnail.jpg?raw=true)
+![Alt Text](TFM%20img.png?raw=trueraw=true)
 
 MATLAB scripts to perform High Throughout Traction Force Microscopy as outlined in [this Bio-Protocol](https://bio-protocol.org)
 
