@@ -73,14 +73,14 @@ end
 % Fields are used to assemble a file name for the output
 
 %presents experiment information. ALl fields can be changed in GUI
-experiment = ' ';
-date_ID = ' ';
-soluble = ' ';
-dish_num = ' ';
-time = ' ';
+experiment = '-';
+date_ID = '-';
+soluble = '-';
+dish_num = 'D1';
+time = '-';
 young = ' ';
 pois = '0.48';
-num_array = ' ';
+num_array = '1';
 
 fprintf('Enter Experiment Information\n')
 
@@ -423,7 +423,9 @@ for ind = 1:file_ind %index throuhg all islands loaded and mapped
     end
 end
     
+if nargin>0
     [~,save_file_name,~] = fileparts(save_file_name);
     save(['data out\' save_file_name '_rerun'],'all_cell_data','-v7.3')
+end
 
 end

@@ -16,12 +16,12 @@
 
 %% View displacement and traction for one island
 load('data out\110717_BMEL Mechano_30kPa_72_DMSO_D1_2.mat')
-cell_data = all_cell_data{17};
+cell_data = all_cell_data{1};
 [t,u,cell_info] = view_one_island(cell_data,true);
 [t,u,cell_info] = view_one_island_rotandcen(cell_data,true);
 
 %% View averaged displacement and traction for a set of islands
-[fields,summary_table] = collect_island_data('110717_BMEL Mechano_30kPa_72_DMSO_D1_2.mat');
+[fields,summary_table] = collect_island_data();
 plot_table = summary_table(summary_table.arrayed_condition == "JAG1",:);
 [T,U,ellipse_axes] = summarize_islands(plot_table,fields);
 
