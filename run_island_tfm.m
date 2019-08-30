@@ -197,8 +197,8 @@ save(['data out\' save_file_name] ,'all_cell_data','-v7.3')
 else
    
     [save_file_name,path] = uigetfile;
-    all_cell_data = load([path, save_file_name]);
-    all_cell_data = all_cell_data.all_cell_data;
+    load([path, save_file_name],'all_cell_data');
+    if length(all_cell_data) == 1;all_cell_data = {all_cell_data};end
     file_ind = length(all_cell_data);
 end    
 
@@ -423,6 +423,7 @@ for ind = 1:file_ind %index throuhg all islands loaded and mapped
     end
 end
     
+    [~,save_file_name,~] = fileparts(save_file_name);
     save(['data out\' save_file_name '_rerun'],'all_cell_data','-v7.3')
 
 end
