@@ -10,7 +10,7 @@ Scirpts utilize code from the
 ,
 [Franck Lab](https://github.com/FranckLab/qDIC)
 , and 
-[Sabass Lab](https://github.com/CellMicroMechanics/Easy-to-use_TFM_package)
+[Sabass Lab](https://github.com/CellMicroMechanics)
 
 A version of this code was used in [Kaylan et. al., eLife (2018)](https://elifesciences.org/articles/38536)
 
