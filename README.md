@@ -3,7 +3,7 @@ High Throughtput Traction Force Microscopy
 
 ![Alt Text](TFM%20img.png?raw=trueraw=true)
 
-MATLAB scripts to perform High Throughput Traction Force Microscopy on Multicellular Islands on Combinatorial Microarrays as outlined in [this Bio-Protocol](https://bio-protocol.org)
+MATLAB scripts to perform High Throughput Traction Force Microscopy on Multicellular Islands on Combinatorial Microarrays as outlined in [this Bio-Protocol](https://doi.org/10.21769/BioProtoc.3418)
 
 Scirpts utilize code from the
 [Danuser Lab](https://github.com/DanuserLab/TFM)
